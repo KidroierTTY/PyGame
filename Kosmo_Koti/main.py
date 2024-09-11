@@ -9,19 +9,19 @@ screen = pg.display.set_mode(size)
 pg.display.set_caption("Kosmo_Koti")
 
 
-def move(starship_rect, events):
-    for event in events:
-        # напиши код здесь
-        if event.type == pg.KEYDOWN:
-            if event.key == pg.K_a:
-                starship_rect.x -= 1
-            if event.key == pg.K_d:
-                starship_rect.x += 1
-            if event.key == pg.K_q:
-                starship_rect.x -= 10
-            if event.key == pg.K_e:
-                starship_rect.x += 10
-    return starship_rect
+# def move(starship_rect, events):
+#     for event in events:
+#         # напиши код здесь
+#         if event.type == pg.KEYDOWN:
+#             if event.key == pg.K_a:
+#                 starship_rect.x -= 1
+#             if event.key == pg.K_d:
+#                 starship_rect.x += 1
+#             if event.key == pg.K_q:
+#                 starship_rect.x -= 10
+#             if event.key == pg.K_e:
+#                 starship_rect.x += 10
+#     return starship_rect
 
 fps = 10
 
