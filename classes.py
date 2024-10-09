@@ -62,9 +62,9 @@ plane1 = Airplane()
 plane2 = Airplane()
 plane3 = Airplane()
 
-print(f'Самолет 1: Двигателей: {plane1.engines}, Сидений: {plane1.seats}')
-print(f'Самолет 2: Двигателей: {plane2.engines}, Сидений: {plane2.seats}')
-print(f'Самолет 3: Двигателей: {plane3.engines}, Сидений: {plane3.seats}')
+print(f'Самолет 1: Двигателей: {plane1.engines}, Сидений: {plane1.seats}.')
+print(f'Самолет 2: Двигателей: {plane2.engines}, Сидений: {plane2.seats}.')
+print(f'Самолет 3: Двигателей: {plane3.engines}, Сидений: {plane3.seats}.')
 
 
 
