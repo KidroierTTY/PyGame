@@ -51,21 +51,57 @@
 
 # KONSTRUCTOR CLASSOV
 
-class Airplane:
-    def __init__(self):
-        self.engines = int(input('Двигатели: '))
-        self.seats = int(input('Посадочные места: '))
+# class Airplane:
+#     def __init__(self):
+#         self.engines = int(input('Двигатели: '))
+#         self.seats = int(input('Посадочные места: '))
+#
+#         print('Самолет собран!')
+#
+# plane1 = Airplane()
+# plane2 = Airplane()
+# plane3 = Airplane()
+#
+# print(f'Самолет 1: Двигателей: {plane1.engines}, Сидений: {plane1.seats}.')
+# print(f'Самолет 2: Двигателей: {plane2.engines}, Сидений: {plane2.seats}.')
+# print(f'Самолет 3: Двигателей: {plane3.engines}, Сидений: {plane3.seats}.')
 
-        print('Самолет собран!')
+# class Car:
+#     def __init__(self):
+#         self.color = str(input("Цвет: "))
+#         self.brand = str(input("Бренд: "))
+#         self.speed = int(input("Максимальная скорость: "))
+#
+#         print("Автомобиль готов!")
+#
+# Car1 = Car()
+#
+# print(f"Машина 1: Бренд: {Car1.brand}, Цвет: {Car1.color}, Максимальная скорость: {Car1.speed}")
 
-plane1 = Airplane()
-plane2 = Airplane()
-plane3 = Airplane()
+class Animal:
+    def __init__(self, name):
+        self.name = name
 
-print(f'Самолет 1: Двигателей: {plane1.engines}, Сидений: {plane1.seats}.')
-print(f'Самолет 2: Двигателей: {plane2.engines}, Сидений: {plane2.seats}.')
-print(f'Самолет 3: Двигателей: {plane3.engines}, Сидений: {plane3.seats}.')
-
+    def bring_destruction(self):
+        print(f'{self.name} что-то сломал!')
 
 
+class Dog(Animal):
+    def __init__(self, name):
+        Animal.__init__(self, name)
+
+    def make_sueta(self):
+        print(f'{self.name} играет с диваном')
+
+
+class Cat(Animal):
+    def __init__(self, name):
+        Animal.__init__(self, name)
+
+    def make_sueta(self):
+        print(f'{self.name} тыгыдыкает в 5 утра по лицу')
+
+
+dog = Dog('Барбос')
+cat = Cat('Елкалаз')
 
