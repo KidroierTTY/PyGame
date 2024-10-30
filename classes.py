@@ -78,30 +78,53 @@
 #
 # print(f"Машина 1: Бренд: {Car1.brand}, Цвет: {Car1.color}, Максимальная скорость: {Car1.speed}")
 
-class Animal:
-    def __init__(self, name):
-        self.name = name
+# class Animal:
+#     def __init__(self, name):
+#         self.name = name
+#
+#     def bring_destruction(self):
+#         print(f'{self.name} что-то сломал!')
+#
+#
+# class Dog(Animal):
+#     def __init__(self, name):
+#         Animal.__init__(self, name)
+#
+#     def make_sueta(self):
+#         print(f'{self.name} играет с диваном')
+#
+#
+# class Cat(Animal):
+#     def __init__(self, name):
+#         Animal.__init__(self, name)
+#
+#     def make_sueta(self):
+#         print(f'{self.name} тыгыдыкает в 5 утра по лицу')
+#
+#
+# dog = Dog('Барбос')
+# cat = Cat('Елкалаз')
 
-    def bring_destruction(self):
-        print(f'{self.name} что-то сломал!')
 
+class Kettle:
+    def turn_on(self):
+        print('Чайник включился')
+        self.__boil()
+        self.__check_t()
+        self.__beep()
+        self.__turn_off()
+    def __boil(self):
+        print('Вода греется, пузырьки мутятся')
+    def __check_t(self):
+        print('Проверяется температура')
+    def __beep(self):
+        print('Вода нагрелась, издает звук')
+    def __turn_off(self):
+        print('Чайник выключился')
+# Создаем объект чайника
+chaynik = Kettle()
+# Включаем его
+chaynik.turn_on()
 
-class Dog(Animal):
-    def __init__(self, name):
-        Animal.__init__(self, name)
-
-    def make_sueta(self):
-        print(f'{self.name} играет с диваном')
-
-
-class Cat(Animal):
-    def __init__(self, name):
-        Animal.__init__(self, name)
-
-    def make_sueta(self):
-        print(f'{self.name} тыгыдыкает в 5 утра по лицу')
-
-
-dog = Dog('Барбос')
-cat = Cat('Елкалаз')
-
+# chaynik.__check_t()
+# chaynik.__boil()
