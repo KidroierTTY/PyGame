@@ -106,25 +106,59 @@
 # cat = Cat('Елкалаз')
 
 
-class Kettle:
-    def turn_on(self):
-        print('Чайник включился')
-        self.__boil()
-        self.__check_t()
-        self.__beep()
-        self.__turn_off()
-    def __boil(self):
-        print('Вода греется, пузырьки мутятся')
-    def __check_t(self):
-        print('Проверяется температура')
-    def __beep(self):
-        print('Вода нагрелась, издает звук')
-    def __turn_off(self):
-        print('Чайник выключился')
-# Создаем объект чайника
-chaynik = Kettle()
-# Включаем его
-chaynik.turn_on()
+# class Kettle:
+#     def turn_on(self):
+#         print('Чайник включился')
+#         self.__boil()
+#         self.__check_t()
+#         self.__beep()
+#         self.__turn_off()
+#     def __boil(self):
+#         print('Вода греется, пузырьки мутятся')
+#     def __check_t(self):
+#         print('Проверяется температура')
+#     def __beep(self):
+#         print('Вода нагрелась, издает звук')
+#     def __turn_off(self):
+#         print('Чайник выключился')
+# # Создаем объект чайника
+# chaynik = Kettle()
+# # Включаем его
+# chaynik.turn_on()
 
 # chaynik.__check_t()
 # chaynik.__boil()
+
+# Допиши код везде, где стоит "..."
+class BankAccount:
+    def __init__(self, balance):
+        self.__balance = balance
+
+#     def set_balance(self, balance):
+#         self.__balance = balance
+#
+#     def get_balance(self):
+#         print(f"Баланс: {self.__balance}")
+#
+#     def add(self):
+#         balance_do = self.__balance
+#         self.value = int(input("Сколько денег хотите начислить: "))
+#         self.__balance += self.value
+#         print(f"Деньги пополнены! Было денег: {balance_do}, Стало денег: {self.__balance}")
+#
+#     def remove(self):
+#         balance_do = self.__balance
+#         self.value = int(input("Сколько денег хотите снять: "))
+#
+#         if self.value > self.__balance:
+#             print("Ошибка: на счете недостаточно средств")
+#         else:
+#             self.__balance -= self.value
+#             print(f"Деньги снялись! Было денег: {balance_do}, Стало денег: {self.__balance}")
+#
+# visa = BankAccount(1000)
+#
+# visa.remove()
+# visa.get_balance()
+# visa.add()
+# visa.get_balance()
